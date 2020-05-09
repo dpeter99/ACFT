@@ -1,18 +1,42 @@
 {
   "homepages": [],
-  "source_base_path": "P:/Minecraft/AlmoastComprehensiveForgeTutorial",
+  "source_base_path": "d:/a/ACFT/ACFT",
   "xrefmap": "xrefmap.yml",
   "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "EZ93MWKdfUfH45BHk2t57Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
     {
       "type": "Conceptual",
       "source_relative_path": "articles/basics.md",
       "output": {
         ".html": {
           "relative_path": "articles/basics.html",
-          "hash": "b/zfCnEPnmqcSv/dwopkxQ=="
+          "hash": "Jau6ZVnimdPWzD7ii08D+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/blocks.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/blocks.html",
+          "hash": "s1VPnnY17x0LX9GOmgpKCg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "eDCeVh/qHVuQTxxC4se8/Q=="
+          "hash": "rsbkivO55jlvjloE4HqQqQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "lFSHN9qxoD77qiBYgs4ACw=="
+          "hash": "MgMj8Ml50sEYSC1nCSR2VQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -67,17 +91,19 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 3
+          "total_file_count": 5,
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -90,8 +116,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
