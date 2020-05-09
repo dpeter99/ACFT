@@ -1,0 +1,1 @@
+"./docfx/2.52/docfx.exe" docfx.json
