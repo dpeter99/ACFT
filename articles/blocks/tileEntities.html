@@ -5,17 +5,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Blocks </title>
+    <title> </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Blocks ">
+    <meta name="title" content=" ">
     <meta name="generator" content="docfx 2.52.0.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -67,25 +67,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="blocks">Blocks</h1>
 
-<p>The base of what the game is made out of. So we might want to add out own. Let's see how!</p>
-<h2 id="registering">Registering</h2>
-<p>To register a block you need to use the registry event for them. It is one of the simplest ones so let's see it:</p>
-<pre><code class="lang-java">@SubscribeEvent
-public static void onBlocksRegistry(final RegistryEvent.Register&lt;Block&gt; blockRegistryEvent) {
-    // register a new block here
-    LOGGER.info(&quot;HELLO from Register Block&quot;);
-
-    IForgeRegistry&lt;Block&gt; reg = blockRegistryEvent.getRegistry();
-
-    reg.register(new OurNewBlock());
-}
-</code></pre>
-<p>You can see that we have a function, with the <code>@SubscribeEvent</code> anotation as with all the registry events. We specify that we want to register Blocks by giving the function a <code>RegistryEvent.Register&lt;Block&gt;</code> input (we can name the parameter whatever we want).
-In the function we can do what we want, here we do a little debug print. This way we can see in what order the functions get called.</p>
-<p>Next we register the block so Mc knows about it. This is done by just getting the registry from the input variable, and calling <code>register</code> on it. We can just pass it a new instance of the block.</p>
-<h2 id="making-the-actual-block-class">Making the actual block class</h2>
 </article>
           </div>
           
@@ -94,7 +76,7 @@ In the function we can do what we want, here we do a little debug print. This wa
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/dpeter99/ACFT/blob/master/articles/blocks.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/dpeter99/ACFT/blob/master/articles/blocks/tileEntities.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -120,8 +102,8 @@ In the function we can do what we want, here we do a little debug print. This wa
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>
