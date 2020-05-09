@@ -2,3 +2,8 @@
   href: intro.md
 - name: Basics
   href: basics.md
+- name: Blocks
+  href: blocks/blocks.md
+  items:
+    - name: TileEntities
+      href: blocks/tileEntities.md
