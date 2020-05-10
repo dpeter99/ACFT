@@ -9,3 +9,5 @@
   items:
     - name: Containers
       href: blocks/tile_entities/containers.md
+- name: Object Holders
+  href: objectHolders.md
