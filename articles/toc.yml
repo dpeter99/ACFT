@@ -4,6 +4,8 @@
   href: basics.md
 - name: Blocks
   href: blocks/blocks.md
+- name: TileEntities
+  href: blocks/tile_entities/tileEntities.md
   items:
-    - name: TileEntities
-      href: blocks/tileEntities.md
+    - name: Containers
+      href: blocks/tile_entities/containers.md
