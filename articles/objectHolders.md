@@ -1,9 +1,9 @@
 # Object Holders
 Object holders are special java classes that hold references to registry entries. They help with finding references to your (or other) mods blocks, items etc.
 
-To make one just create a class the usual way and add the anotations like this:
+To make one just create a class the usual way and add the annotations like this:
 ```java
-@ObjectHolder("arcanerituals")
+@ObjectHolder("our_mod")
 public class MyBlocks {
 
     //the propery has to have the same name as the registry entry

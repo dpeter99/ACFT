@@ -1,8 +1,8 @@
-AlmoastComprehensiveForgeTutorial
+AlmostComprehensiveForgeTutorial
 
-(website)[https://dpeter99.github.io/ACFT/]
+[website][(https://dpeter99.github.io/ACFT/)
 
-This is some foge tutorial I guess.
+This is some forge tutorial I guess.
 
 English is not my first language so feel free to fix any mistakes :)
 
