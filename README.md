@@ -1,6 +1,6 @@
 AlmostComprehensiveForgeTutorial
 
-[website][(https://dpeter99.github.io/ACFT/)
+[website](https://dpeter99.github.io/ACFT/)
 
 This is some forge tutorial I guess.
 
