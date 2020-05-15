@@ -70,23 +70,8 @@
 <h1 id="blocks">Blocks</h1>
 
 <p>The base of what the game is made out of. So we might want to add out own. Let's see how!</p>
-<h2 id="registering">Registering</h2>
-<p>To register a block you need to use the registry event for them. It is one of the simplest ones so let's see it:</p>
-<pre><code class="lang-java">@SubscribeEvent
-public static void onBlocksRegistry(final RegistryEvent.Register&lt;Block&gt; blockRegistryEvent) {
-    // register a new block here
-    LOGGER.info(&quot;HELLO from Register Block&quot;);
-
-    IForgeRegistry&lt;Block&gt; reg = blockRegistryEvent.getRegistry();
-
-    reg.register(new OurNewBlock());
-}
-</code></pre>
-<p>You can see that we have a function, with the <code>@SubscribeEvent</code> anotation as with all the registry events. We specify that we want to register Blocks by giving the function a <code>RegistryEvent.Register&lt;Block&gt;</code> input (we can name the parameter whatever we want).
-In the function we can do what we want, here we do a little debug print. This way we can see in what order the functions get called.</p>
-<p>Next we register the block so Mc knows about it. This is done by just getting the registry from the input variable, and calling <code>register</code> on it. We can just pass it a new instance of the block.</p>
 <h2 id="making-the-actual-block-class">Making the actual block class</h2>
-<p>To make the actual class for a block all you need to do is make a new class (is is best bpartice to place it under a <code>blocks</code> folder) and make it inherit from <code>Block</code>
+<p>To make the actual class for a block all you need to do is make a new class (is is best practice to place it under a <code>blocks</code> folder) and make it inherit from <code>Block</code>
 So the first line would look something like this:</p>
 <pre><code class="lang-java">public class OurNewBlock extends Block {
 </code></pre>
@@ -96,7 +81,7 @@ So the first line would look something like this:</p>
     .notSolid());
 }
 </code></pre>
-<p>Now we are almoast there just need to set the registry name for it. The registry name is what MC uses to internally identify anything. It is a string that must be unique in the type group but not globally. So we can have <code>grass</code> as an item and <code>grass</code> as a block.</p>
+<p>Now we are almost there just need to set the registry name for it. The registry name is what MC uses to internally identify anything. It is a string that must be unique in the type group but not globally. So we can have <code>grass</code> as an item and <code>grass</code> as a block.</p>
 <p>Now the registry name can be set in 2 places and some will tell you to set it at one place and others to use the other....</p>
 <p>Both of these are fully valid I think.</p>
 <h3 id="option-1">Option 1</h3>
@@ -109,7 +94,7 @@ So the first line would look something like this:</p>
 }
 </code></pre>
 <h3 id="option-2">Option 2</h3>
-<p>In this case we set it on the maseter copy just before puting it in the registry</p>
+<p>In this case we set it on the master copy just before putting it in the registry see the Registry part below.</p>
 <pre><code class="lang-java">@SubscribeEvent
 public static void onBlocksRegistry(final RegistryEvent.Register&lt;Block&gt; blockRegistryEvent) {
     // register a new block here
@@ -120,6 +105,21 @@ public static void onBlocksRegistry(final RegistryEvent.Register&lt;Block&gt; bl
     reg.register(new OurNewBlock().setRegistryName(&quot;our_block&quot;));
 }
 </code></pre>
+<h2 id="registering">Registering</h2>
+<p>To register a block you need to use the registry event for them. It is one of the simplest ones so let's see it:</p>
+<pre><code class="lang-java">@SubscribeEvent
+public static void onBlocksRegistry(final RegistryEvent.Register&lt;Block&gt; blockRegistryEvent) {
+    // register a new block here
+    LOGGER.info(&quot;HELLO from Register Block&quot;);
+
+    IForgeRegistry&lt;Block&gt; reg = blockRegistryEvent.getRegistry();
+
+    reg.register(new OurNewBlock());
+}
+</code></pre>
+<p>You can see that we have a function, with the <code>@SubscribeEvent</code> annotation as with all the registry events. We specify that we want to register Blocks by giving the function a <code>RegistryEvent.Register&lt;Block&gt;</code> input (we can name the parameter whatever we want).
+In the function we can do what we want, here we do a little debug print. This way we can see in what order the functions get called.</p>
+<p>Next we register the block so Mc knows about it. This is done by just getting the registry from the input variable, and calling <code>register</code> on it. We can just pass it a new instance of the block.</p>
 </article>
           </div>
           
