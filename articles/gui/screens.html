@@ -77,15 +77,18 @@
 In <code>ContainerScreen</code> we use the extra</li>
 <li><code>xSize</code> and <code>ySize</code> witch we set them to the size of the GUI we want to draw (e.g. if you have a 200x200 gui you set these to 200, 200)</li>
 </ul>
+<h2 id="drawing-the-base-background">Drawing the base background</h2>
 <p>For drawing the screen we use the <code>blit</code> function of the <code>AbstractGui</code> witch is in the inheritance tree of <code>ContainerScreen</code>. The <code>blit</code> function has many overrides:</p>
 <ul>
 <li><p><code>public void blit(int x0, int y0, int u0, int v0, int width, int height)</code></p>
 <p>This is used when your texture is exactly 256x256. The first 2 inputs are the destination position on the window. The next 2 are the top left corner of the source. The last 2 are the bottom left corner.</p>
 </li>
 <li><p><code>public static void blit(int x0, int y0, int z, float u0, float v0, int width, int height, int textureHeight, int textureWidth)</code></p>
-<p>This version is used when you have a different sized source image. The first 2 are the same as the last case. The <code>z</code> should be <code>this.blitOffset</code>. The <code>u0</code> <code>v0</code> are the top left of the source coordinates. The <code>width</code> and <code>height</code> are the size of the source. And at last the size of the source image;</p>
+<p>This version is used when you have a different sized source image. The first 2 are the same as the last case. The <code>z</code> should be <code>this.blitOffset</code> (this is a private variable so use <code>this.getBlitOffset()</code>). The <code>u0</code> <code>v0</code> are the top left of the source coordinates. The <code>width</code> and <code>height</code> are the size of the source. And at last the size of the source image;</p>
 </li>
 </ul>
+<h2 id="drawing-tooltips">Drawing tooltips</h2>
+<p>This is quite straight forward just use the <code>this.renderTooltip</code> function the last two params are the position, just pass the <code>mouseX, mouseY</code> from your render method. The first parameter is just the string to write, the list versions are multiline tooltips.</p>
 </article>
           </div>
           
