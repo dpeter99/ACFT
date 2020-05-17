@@ -41,6 +41,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/blocks/tile_entities/block_capabilities/item_handler.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/blocks/tile_entities/block_capabilities/item_handler.html",
+          "hash": "bL7XrhxXby8qvM2UM/iNkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/blocks/tile_entities/capabilities.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/blocks/tile_entities/capabilities.html",
+          "hash": "2G0yNpCjBSlp7lnQ2juQyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/blocks/tile_entities/containers.md",
       "output": {
         ".html": {
@@ -58,6 +82,18 @@
         ".html": {
           "relative_path": "articles/blocks/tile_entities/tileEntities.html",
           "hash": "6IoAfgEpevitdpH3UfIyUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/gui/screens.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/gui/screens.html",
+          "hash": "vvSIGMbQSYMP1df7XvjQAQ=="
         }
       },
       "is_incremental": false,
@@ -93,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "aFunVPgnj4LhPsOvdBJPiQ=="
+          "hash": "l/iW/I0NvrTIjvMsNrPZrA=="
         }
       },
       "is_incremental": false,
@@ -138,7 +174,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 8,
+          "total_file_count": 11,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
