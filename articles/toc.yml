@@ -11,3 +11,7 @@
       href: blocks/tile_entities/containers.md
 - name: Object Holders
   href: objectHolders.md
+- name: GUI
+  items:
+    - name: Screens
+      href: gui/screens.md 
