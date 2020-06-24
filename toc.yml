@@ -1,3 +1,5 @@
 - name: Articles
   href: articles/
   homepage: articles/intro.md
+- name: dpeter's notes
+  href: notes/
