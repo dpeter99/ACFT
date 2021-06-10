@@ -1,1 +1,1 @@
-"./docfx/2.52/docfx.exe" docfx.json --serve
+"./docfx/2.58/docfx.exe" docfx.json --serve

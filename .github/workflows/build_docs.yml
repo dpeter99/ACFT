@@ -15,7 +15,7 @@ jobs:
         - name: Build the docs
           shell: cmd
           working-directory: ./
-          run: '"./docfx/2.52/docfx.exe" docfx.json'
+          run: '"./docfx/2.58/docfx.exe" docfx.json'
 
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3
