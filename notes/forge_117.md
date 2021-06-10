@@ -2,7 +2,7 @@ For anyone asking for 1.17 forge here is the rundown of the process that goes in
 
 > [!WARNING]
 > Currently step 1 is being worked on. This can take a few days.
-> Currently 338 patches remain from 569 total
+> Currently 175 patches remain from 569 total
 
  - [x] step 0: have vanilla decompiling and compiling again without forge on top. This is needed because the decompiling is not perfect.
  - [currently] step 1: have forge compiling, this means that all the code modifications that forge adds still produce a compiling code. This process often requires disabling patches/features temporarily
