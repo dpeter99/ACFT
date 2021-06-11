@@ -1,8 +1,8 @@
 For anyone asking for 1.17 forge here is the rundown of the process that goes into updating it.
 
 > [!WARNING]
-> Currently step 1 is being worked on. This can take a few days.
-> Currently almoast all patches are applied, and the resulting compiler errors are being fixed. This is a long process as people have to understand how the new changes from Mojang affect Forge's code
+> Currently step 1 is being worked on. This is being done by a few people doing 16h shifts, of non stop work.
+> Currently the game compiles but many features are broken (for example: creative menu, joinning servers etc.)
 
  - [x] step 0: have vanilla decompiling and compiling again without forge on top. This is needed because the decompiling is not perfect.
  - [currently] step 1: have forge compiling, this means that all the code modifications that forge adds still produce a compiling code. This process often requires disabling patches/features temporarily
