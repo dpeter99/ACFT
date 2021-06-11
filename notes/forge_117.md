@@ -1,11 +1,12 @@
 For anyone asking for 1.17 forge here is the rundown of the process that goes into updating it.
 
 > [!WARNING]
-> Currently step 1 is being worked on. This is being done by a few people doing 16h shifts, of non stop work.
-> Currently the game compiles but many features are broken (for example: creative menu, joinning servers etc.)
+> Currently step 1 is done.
+> Currently the team is working on tooling and core component rewrites (to properly support the new Java version).
+> This work is being done to make things go easier in the future. This is a fairly complex rewrite so we don't have a time estimate on it
 
  - [x] step 0: have vanilla decompiling and compiling again without forge on top. This is needed because the decompiling is not perfect.
- - [currently] step 1: have forge compiling, this means that all the code modifications that forge adds still produce a compiling code. This process often requires disabling patches/features temporarily
+ - [x] step 1: have forge compiling, this means that all the code modifications that forge adds still produce a compiling code. This process often requires disabling patches/features temporarily
  - [ ] step 2: once forge compiles and the initial set of patches can be produced, then forge can start to be properly developed, until it's in an usable state enough to actually use. In this phase we make sure that none of the forge extra code parts break the original functionality.
  - [ ] step 3: fix all the missing features (that make sense to fix), cleanup, add new hooks, etc. This is the longest part as people have to figure out what mojang did and how to expose it to the modders in a safe way-- this will take some weeks, and result in the recommended build
 
