@@ -1,11 +1,11 @@
 For anyone asking for 1.17 forge here is the rundown of the process that goes into updating it.
 
-[New site](http://localhost:1313/posts/forge_117/)
+[New site](https://dpeter99.github.io/posts/forge_117/)
 
 > [!WARNING]
 > NEW!
 > Currently step 2 is done.
-> The pathes for forge are ready and a version of forge is running on 1.17. Currently we are waiting on the final touches on the so called Big Peel.
+> The patches for forge are ready and a version of forge is running on 1.17. Currently we are waiting on the final touches on the so called Big Peel.
 
 ## The Big Peel
 This refers to a quite large rewiting of how the mods are loaded internally. This doesn't change the "just place the mods inside the ``mods`` folder". And it should not effect players. For the more technical people this means that mods are not Java modules and the mod loader uses modules for loading mods.
