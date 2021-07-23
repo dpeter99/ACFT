@@ -72,9 +72,10 @@
 <p><a href="https://dpeter99.github.io/posts/forge_117/">New site</a></p>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>NEW!
+<p>NEW! 2021 July 22
 Currently step 2 is done.
-The patches for forge are ready and a version of forge is running on 1.17. Currently we are waiting on the final touches on the so called Big Peel.</p>
+This meat that we have a first release and people can start playing and modding for it.
+But this is not yet stable, there might be many issues and bugs.</p>
 </div>
 <h2 id="the-big-peel">The Big Peel</h2>
 <p>This refers to a quite large rewiting of how the mods are loaded internally. This doesn't change the &quot;just place the mods inside the <code>mods</code> folder&quot;. And it should not effect players. For the more technical people this means that mods are not Java modules and the mod loader uses modules for loading mods.</p>
@@ -82,7 +83,7 @@ The patches for forge are ready and a version of forge is running on 1.17. Curre
 <ul>
 <li>[x] step 0: have vanilla decompiling and compiling again without forge on top. This is needed because the decompiling is not perfect.</li>
 <li>[x] step 1: have forge compiling, this means that all the code modifications that forge adds still produce a compiling code. This process often requires disabling patches/features temporarily</li>
-<li>[x] step 2: [Mostly done] once forge compiles and the initial set of patches can be produced, then forge can start to be properly developed, until it's in an usable state enough to actually use. In this phase we make sure that none of the forge extra code parts break the original functionality.</li>
+<li>[x] step 2: once forge compiles and the initial set of patches can be produced, then forge can start to be properly developed, until it's in an usable state enough to actually use. In this phase we make sure that none of the forge extra code parts break the original functionality.</li>
 <li>[ ] step 3: fix all the missing features (that make sense to fix), cleanup, add new hooks, etc. This is the longest part as people have to figure out what mojang did and how to expose it to the modders in a safe way-- this will take some weeks, and result in the recommended build</li>
 </ul>
 <p>Most of this takes a long time and people are doing it in their free time so be patient and don't ask them.
